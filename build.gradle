@@ -332,8 +332,9 @@ graalvmNative {
 
             // Advanced options
             buildArgs.add('-H:+ReportExceptionStackTraces')
+            buildArgs.add('--class-path build/libs/terra-cli-0.140.0.jar')
             // Passes '-H:Extra' to the native image builder options. This can be used to pass parameters which are not directly supported by this extension
-//    jvmArgs.add('flag') // Passes 'flag' directly to the JVM running the native image builder
+//            jvmArgs.add("--class-path terra-cli.jar")// Passes 'flag' directly to the JVM running the native image builder
 
             // Runtime options
 //    runtimeArgs.add('--help') // Passes '--help' to built image, during "nativeRun" task
