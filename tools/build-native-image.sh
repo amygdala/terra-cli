@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
-#GRAALVM_HOME=${GRAALVM_HOME:-/usr/lib/graalvm}
+# Build the jar file from source
+./gradlew clean build
+
+# Make sure native-image is on the path. I use jenv to manage this.
 native-image \
-  --class-path ../../build/libs/terra-cli-*.jar:build/libs/nativecompile-classpath-*.jar \
-  -H:Name=terra \
-  bio.terra.cli.command.Main
+  --class-path 'build/libs/terra-cli-0.140.0.jar' \
+  -H:+ReportExceptionStackTraces \
+  bio.terra.cli.command.Main \
+  terra
