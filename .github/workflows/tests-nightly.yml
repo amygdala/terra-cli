@@ -12,6 +12,8 @@ jobs:
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Checkout current code
         id: checkout_code
         uses: actions/checkout@v2
