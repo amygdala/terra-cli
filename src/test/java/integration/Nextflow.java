@@ -46,7 +46,65 @@ public class Nextflow extends ClearContextIntegration {
 
   @Test
   @DisplayName("nextflow config and run with GLS tutorial")
-  void nextflowFromGLSTutorial() throws IOException {
+  void nextflowFromGLSTutorial1() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial2() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial3() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial4() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial5() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial6() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial7() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial8() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial9() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  @Test
+  @DisplayName("nextflow config and run with GLS tutorial")
+  void nextflowFromGLSTutorial10() throws IOException {
+    nextflowFromGLSTutorial_inner();
+  }
+
+  void nextflowFromGLSTutorial_inner() throws IOException {
     // select a test user and login
     TestUser testUser = TestUser.chooseTestUserWithSpendAccess();
     testUser.login();
