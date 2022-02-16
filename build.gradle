@@ -213,6 +213,8 @@ task runTestsWithTag(type: Test) {
     dependsOn runInstallForTesting // run the install-for-testing.sh script before any tests
 
     outputs.upToDateWhen { false } // force tests to always be re-run
+
+    maxParallelForks = 2
 }
 
 // cleanup workspaces owned by test users.
