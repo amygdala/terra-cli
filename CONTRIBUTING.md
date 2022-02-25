@@ -47,6 +47,7 @@ Then, from the top-level directory, run:
 source tools/local-dev.sh
 terra
 ```
+To rebuild after changing code: `./gradlew installDist`
 
 #### Logging
 Logging is turned off by default. Modify the level with the `terra config set logging` command. Available levels are
